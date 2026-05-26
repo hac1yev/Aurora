@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 import { RegistrationModule } from './modules/registration/registration.module';
 import { DatabaseModule } from './modules/database/database.module';
 import { ConfigModule } from '@nestjs/config';
+import { RedisModule } from './shared/modules/redis/redis.module';
 
 @Module({
   imports: [
@@ -13,6 +14,7 @@ import { ConfigModule } from '@nestjs/config';
     }),
     RegistrationModule,
     DatabaseModule,
+    RedisModule,
   ],
   controllers: [AppController],
   providers: [AppService],

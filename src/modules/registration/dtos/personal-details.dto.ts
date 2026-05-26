@@ -48,7 +48,6 @@ export class PersonalDetailsDto {
   })
   @IsNotEmpty()
   @IsString()
-  // @IsValidUin()
   uin!: string;
 
   @ApiProperty({

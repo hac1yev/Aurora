@@ -14,7 +14,6 @@ import {
   MAX_FILE_SIZE_BYTES,
   MAX_FILE_UPLOADS,
 } from '../constants/files.constants';
-import { format } from 'path';
 import { formatAllowedTypes, formatMaxSize } from 'src/utils';
 
 @Injectable()

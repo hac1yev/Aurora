@@ -2,7 +2,7 @@ import * as bcrypt from 'bcrypt';
 import { ALLOWED_EXTENSION } from 'src/shared/constants/files.constants';
 
 export function hashPassword(password: string) {
-    return bcrypt.hash(password, 10); 
+  return bcrypt.hash(password, 10);
 }
 
 export function formatMaxSize(bytes: number): string {
@@ -14,5 +14,5 @@ export function formatMaxSize(bytes: number): string {
 }
 
 export function formatAllowedTypes() {
-    return ALLOWED_EXTENSION.map(ext => ext.toUpperCase()).join(', ');
+  return ALLOWED_EXTENSION.map((ext) => ext.toUpperCase()).join(', ');
 }
