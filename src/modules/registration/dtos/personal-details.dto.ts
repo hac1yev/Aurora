@@ -48,7 +48,7 @@ export class PersonalDetailsDto {
   })
   @IsNotEmpty()
   @IsString()
-  uin!: string;
+  passportNumber!: string;
 
   @ApiProperty({
     example: true

@@ -14,15 +14,15 @@ export class User {
     @Column({ type: 'date' }) // database handles it properly
     birthDate!: Date;
 
-    @Column({ type: 'int' })
-    height!: number;
+    @Column()
+    citizenship!: string;
 
-    @Column({ unique: true })
-    phoneNumber!: string;
+    @Column()
+    passportNumber!: string;
 
-    @Column({ unique: true })
-    email!: string;
+    @Column()
+    consent!: boolean;
 
-    @Column({ select: false }) // Hide password from responses. Password will NOT be returned in queries automatically
-    password!: string;
+    @Column()
+    passportImage!: string;
 }
